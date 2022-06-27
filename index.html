@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+button{
+  padding:3px 3px; 
+}
+a{
+  text-decoration: none;
+  color:blue
+}
+form> input{
+  padding:5px;
+  width:13%;
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+#submit{
+  width:6%
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div id="menu">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+   <button id="show_product"><a href="inventory.html">Show product </a></button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "product_form"-->
+
+      <!--Create four inputs to accept brand, name, price, image and brand-->
+      <!--give the inputs following respective id's, "product_brand", "product_name", "product_price","product_image"-->
+      <!--create a submit option to submit form, give it html id as "submit"-->
+     
+<form id="product_form">
+  <input type="text" id="product_brand" placeholder="enter brand name">
+  <input type="text" id="product_name" placeholder="enter name of product">
+  <input type="number" id="product_price" placeholder="enter price">
+  <input type="url" id="product_image" placeholder="enter img url ">
+  <input type="submit" id="submit">
+</form>
+
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
